@@ -1744,7 +1744,18 @@ textarea{
     .convers__circle{
         width: 100px;
     }
-
+    .blog__section .left__dot{
+        display: none;
+    }
+    .features .blog__content h4{
+        font-weight: var(--font-medium);
+    }
+    .side__blog{
+        width: 32%;
+    }
+    .recent__blog .blog__content h4{
+        font-weight: var(--font-medium);
+    }
 
 }
 /* ===============================Mobile devices===================== */
