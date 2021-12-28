@@ -229,7 +229,7 @@ input {
     border-left: 0.01px solid #99999933;
     height: 75vh;
     position: relative;
-    transition: all .4s ease;
+    transition: all .3s ease;
 }
 
 /* ==============ARROW================= */
@@ -274,7 +274,7 @@ input {
 
 
 .color:nth-child(1):hover{
-    background: radial-gradient(circle, hsla(330, 36%, 53%, 1) 0%, hsla(289, 68%, 19%, 1) 100%);
+    background-color: var(--blog-frist);
     font-size: var(--biggest-font-size);
 }
 .color:nth-child(2):hover{
@@ -1981,6 +1981,10 @@ textarea{
     .query__text{
         width: 100%;
         line-height: 25px;
+    }
+    .query__image {
+        position: relative;
+        top: 100px;
     }
     .query__text p{
         margin: 1rem 0;
