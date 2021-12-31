@@ -289,7 +289,7 @@ input {
     font-size: var(--biggest-font-size);
 }
 .color:nth-child(4):hover{
-    background-color: var(--blue-first);
+    background-color: var(--service-second);
     font-size: var(--biggest-font-size);
 }
 .color:nth-child(5):hover{
