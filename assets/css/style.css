@@ -25,6 +25,9 @@
     --blog-frist: #bc382e;
     --blog-second: #98261d;
     --blog-three: #791c15;
+    --service-first: #e84c15;
+    --service-second: #a2320a;
+    --service-third: #892a09;
 
 
   
@@ -440,7 +443,7 @@ input {
 
 .about__inner,
 .career__inner{
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
     text-align: center;
     transform: translateY(100px);
@@ -1405,6 +1408,146 @@ textarea{
 }
 
 
+/* =======================SERVICE PAGE===================== */
+.services-section{
+    width: 100%;
+    position: relative;
+    background-color: var(--service-first);
+    overflow: hidden;
+}
+.service__container{
+    width: 100%;
+    height: 90vh;
+    background-color: var(--service-first);
+    position: relative;
+    overflow: hidden;
+}
+.marketing{
+    width: 350px;
+    position: absolute;
+    bottom: 10px;
+    right: -70px;
+}
+.development__section{
+    width: 100%;
+    position: relative;
+    background-color: var(--service-second);
+    overflow: hidden;
+}
+.left__dot{
+    position: relative;
+    width: 200px;
+    left: -150px;
+    top: 0;
+}
+.right__circle{
+    width: 150px;
+    position: absolute;
+    right: -50px;
+}
+.development__container{
+    max-width: 95%;
+    margin: auto;
+}
+.development__wrapper{
+    display: grid;
+    grid-template-columns: 55% 40%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.development__wrapper .right img{
+    width: 100%;
+}
+.tabs{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: var(--h1-font-size);
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: space-between;
+    position: relative;
+    transition: all .3s ease;
+    padding: 1rem .4rem;
+}
+.arrow__tab{
+    width: 50px;
+    display: none;
+    margin-top: 15px;
+}
+
+.tabs:hover .arrow__tab{
+    display: block;
+}
+
+.tabs a{
+    color: var(--white-color);
+    cursor: pointer;
+    position: relative;
+}
+
+.tabs .nav__link{
+    color: var(--white-color);
+}
+.tabs:hover{
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--white-color);
+}
+
+.tabs:hover a{
+    transform: scale(0.905);
+}
+
+.development__section-two{
+    width: 100%;
+    background-color: var(--service-third);
+    overflow: hidden;
+    position: relative;
+}
+.development__wrapper-two{
+    display: grid;
+    grid-template-columns: 40% 55%;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+}
+.development__wrapper-two .left img{
+    width: 100%;
+}
+.development__wrapper-two .right .tabs{
+    text-align: right;
+}
+/* ===========================END SERVICE PAGE================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1696,7 +1839,20 @@ textarea{
         font-size: var(--smaller-font-size);
         padding: .2rem .5rem;
     }
-
+    .development__wrapper{
+        display: grid;
+        grid-template-columns: 100%;
+        flex-direction: column;
+        grid-template-rows: 40%;
+    }
+    .marketing{
+        width: 200px;
+    }
+    .development__wrapper-two{
+        display: grid;
+        grid-template-columns: 100%;
+        flex-direction: column-reverse;
+    }
 
 }
 
@@ -1756,7 +1912,11 @@ textarea{
     .recent__blog .blog__content h4{
         font-weight: var(--font-medium);
     }
-
+    .tabs{
+        font-size: var(--h2-font-size);
+        text-align: center;
+        font-weight: 400;
+    }
 }
 /* ===============================Mobile devices===================== */
 @media screen and (max-width: 480px) {
@@ -1767,6 +1927,20 @@ textarea{
     .nav{
         max-width: 90%;
         margin: auto;
+    }
+    .tabs{
+        font-size: var(--normal-font-size);
+        text-align: left;
+        font-weight: 400;
+        padding: 0rem;
+    }
+    .tabs:hover a{
+        font-size: var(--h3-font-size);
+    }
+    .arrow__tab{
+        width: 30px;
+        display: none;
+        margin-top: 10px;
     }
     .header{
         width: 100%;
