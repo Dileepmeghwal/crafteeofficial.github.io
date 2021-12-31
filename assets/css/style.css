@@ -94,7 +94,7 @@
   
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
     overflow-x: hidden;
     font-size: 16px;
 }
@@ -145,10 +145,10 @@ input {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 #fullpageContainer{
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
 }
 .section {
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
 }
 
 .container {
@@ -1519,6 +1519,14 @@ textarea{
 }
 .development__wrapper-two .right .tabs{
     text-align: right;
+    float: right;
+}
+.development__wrapper-two .right .tabs .nav__link{
+    text-align: right;
+    float: right;
+}
+.career__text{
+    padding: 0;
 }
 /* ===========================END SERVICE PAGE================== */
 
@@ -1717,6 +1725,10 @@ textarea{
     .header__link{
         width: 90%;
         margin: auto;
+    }
+    .team-section {
+        width: 100%;
+        height: min-content;
     }
     
     .craftee__info{
