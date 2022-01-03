@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Festive&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Montserrat:wght@100;200;300;400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Petemoss&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto:wght@100;300;400;500;700;900&family=Waterfall&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -34,6 +35,7 @@
     /*========== Font and typography ==========*/
     /* --body-font: 'Petemoss', cursive; */
     --title-font: 'Poppins', sans-serif;
+    --elephant-font: 'Waterfall', cursive;
     --biggest-font-size: 2.5rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -561,9 +563,10 @@ input {
     text-align: center;
     color: var(--white-color);
 }
-.title h2{
+.title h1,h3{
     color: var(--white-color);
 }
+
 .inner__team{
     max-width: 95%;
     margin: 0 auto;
@@ -988,25 +991,24 @@ textarea{
     margin: auto;
 }
 
-.query__container h4{
+.query__container h1{
     font-size: var(--h1-font-size);
     font-weight: var(--font-medium);
     padding: 2% 0;
+    color: var(--white-color);
 }
 
 .query__text{
     width: 65%;
     text-transform: capitalize;
-    font-weight: var(--third-weight);
-    line-height: 25px;
 }
-.query__text p span a{
-    color: var(--blue-first);
+.query__text a{
+    color: #ddd;
     transition: 0.3s ease;
 }
 
-.query__text p span a:hover{
-    color: var(--first-color-second);
+.query__text a:hover{
+    color: var(--white-color);
 }
 
 .query__dots{
@@ -1041,6 +1043,7 @@ textarea{
     position: relative;
     overflow: hidden;
 }
+
 
 .career-bg{
     width: 130px;
@@ -1415,6 +1418,7 @@ textarea{
     background-color: var(--service-first);
     overflow: hidden;
 }
+
 .service__container{
     width: 100%;
     height: 90vh;
@@ -1422,11 +1426,18 @@ textarea{
     position: relative;
     overflow: hidden;
 }
+
 .marketing{
     width: 350px;
     position: absolute;
     bottom: 10px;
     right: -70px;
+}
+.elephant{
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 1px;
+    font-size: var(--biggest-font-size);
+    margin-left: .5rem;
 }
 .development__section{
     width: 100%;
@@ -1760,9 +1771,13 @@ textarea{
     .career__text h1{
         font-size: var(--h2-font-size);
     }
+
     .about__header{
         max-width: 95%;
         margin: auto;
+    }
+    .converse__text h1{
+        font-size: var(--h3-font-size);
     }
     .convers-section{
         height: 75vh;
@@ -1865,6 +1880,9 @@ textarea{
         grid-template-columns: 100%;
         flex-direction: column-reverse;
     }
+    .query__container h1 {
+        font-size: var(--h2-font-size);
+    }
 
 }
 
@@ -1885,6 +1903,10 @@ textarea{
     }
     .submit-btn{
         max-width: 100%;
+    }
+    .query__container h1 {
+        font-size: var(--h2-font-size);
+        margin-bottom: 2.5rem;
     }
     .query__section{
         height: auto;
@@ -1991,6 +2013,7 @@ textarea{
     .about__text h1{
         font-size: var(--h2-font-size);
     }
+
     .about__inner,
     .career__inner{
         max-width: 90%;
@@ -2196,7 +2219,7 @@ textarea{
         font-size: var(--normal-font-size);
     }
     .converse__text h1{
-        font-size: var(--h1-font-size);
+        font-size: var(--h2-font-size);
     }
     .converse__text h3{
         font-size: var(--h3-font-size);
