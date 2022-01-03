@@ -96,7 +96,7 @@
   
 html {
     scroll-behavior: smooth;
-    /* scroll-snap-type: y mandatory; */
+    scroll-snap-type: y mandatory;
     overflow-x: hidden;
     font-size: 16px;
 }
@@ -147,10 +147,10 @@ input {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 #fullpageContainer{
-    /* scroll-snap-type: y mandatory; */
+    scroll-snap-type: y mandatory;
 }
 .section {
-    /* scroll-snap-align: start; */
+    scroll-snap-align: start;
 }
 
 .container {
@@ -411,8 +411,10 @@ input {
 .bar{
     cursor: pointer;
 }
+
 .menu__bar .menu{
     float: left;
+    color: var(--white-color);
 }
 .menu__bar .bars{
     width: 35px;
