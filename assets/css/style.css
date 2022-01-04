@@ -9,9 +9,9 @@
 
     /* RGBA color mode */
     --first-color: #000000;
-    --first-color-second: #B85C38;
+    --first-color-second: #0b3019;
     --first-color-alt: #196537;
-    --title-color: #5C3D2E;
+    --title-color: #124b28;
     --text-color: #ffffff;
     --white-color: #FFF;
     --blue-first: #0C2AA6;
@@ -481,6 +481,7 @@ input {
 .converse__text h1{
     font-size: var(--biggest-font-size);
     color: var(--white-color);
+    text-transform: uppercase;
 }
 .about__inner h1,
 .career__inner h1,
@@ -573,6 +574,7 @@ input {
     margin: 0 auto;
     text-align: center;
     color: var(--white-color);
+    text-transform: uppercase;
 }
 .title h1,h3{
     color: var(--white-color);
@@ -704,6 +706,8 @@ input {
 }
 .summary__box{
     width: 22%;
+    display: flex;
+    justify-content: center;
 }
 
 .border{
@@ -786,7 +790,7 @@ input {
     text-align: center;
     max-width: 60%;
     margin: 2rem auto;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .contact__text h1{
@@ -1251,12 +1255,12 @@ textarea{
     padding: .6rem;
     border-radius: 5px;
     margin-top: var(--mb-1);
-    background-color: var(--career-button);
+    background-color: var(--career-second);
     cursor: pointer;
     transition: .3s ease;
 }
 .convers__button:hover{
-    background-color: var(--career-second);
+    background-color: #393E46;
 }
 .convers__button a{
     color: var(--white-color);
@@ -1492,6 +1496,7 @@ textarea{
     text-align: center;
     color: var(--white-color);
     padding: 5% 0;
+    text-transform: uppercase;
 }
 .development__container .services__text h1{
     color: var(--white-color);
