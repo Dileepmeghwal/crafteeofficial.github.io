@@ -5,17 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <!--=============== FAVICONS ===============-->
     <link rel="shortcut icon" href="./assets/images/craftee-logo.jpg" type="image/png">
 
     <!--=============== REMIXICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!-- =================== TILT JS===================== -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js">
-    
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -38,31 +34,31 @@
 
             <div class="header__menu container">
                 <div class="header__link">
-                    <div class="nav__item color">
+                    <div class="nav__item color" id="blog">
                         <li><a href="blog.html">Blog</a></li>
                         <div class="arrow-up">
                             <img src="./assets/images/arrow.png" alt="">
                         </div>
                     </div>
-                    <div class="nav__item color">
+                    <div class="nav__item color" id="career">
                         <li><a href="career.html">Career</a></li>
                         <div class="arrow-up">
                             <img src="./assets/images/arrow.png" alt="">
                         </div>
                     </div>
-                    <div class="nav__item color">
+                    <div class="nav__item color" id="about">
                         <li><a href="about.html">About Us</a></li>
                         <div class="arrow-up">
                             <img src="./assets/images/arrow.png" alt="">
                         </div>
                     </div>
-                    <div class="nav__item color">
+                    <div class="nav__item color" id="service">
                         <li><a href="service.html">Services</a></li>
                         <div class="arrow-up">
                             <img src="./assets/images/arrow.png" alt="">
                         </div>
                     </div>
-                    <div class="nav__item color">
+                    <div class="nav__item color" id="contact">
                         <li><a href="contact.html">Contact Us</a></li>
                         <div class="arrow-up">
                             <img src="./assets/images/arrow.png" alt="">
@@ -107,7 +103,7 @@
                     </div>
                     
                     <div class="small-text" data-tilt data-tilt-startX="20" data-tilt-startY="-20">
-                        <h1 id="item_no">02</h1>
+                        <h1 id="item_no" style="color:white">00</h1>
                     </div>
                 </div>
             </div>
@@ -117,13 +113,13 @@
 
 
     
-    
 
     <!-- ====================TILT JS========================= -->
-    <script src="./assets/js/vanilla-tilt.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/menu.js"></script>
+
 </body>
 </html>
 
