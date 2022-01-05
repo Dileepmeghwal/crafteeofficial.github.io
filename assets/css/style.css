@@ -303,7 +303,7 @@ input {
 
 
 .craftee__info{
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .craftee__info .info__content h4{
@@ -336,6 +336,9 @@ input {
 .craftee__info{
     position: relative;
 }
+.info__content span{
+    font-family: var(--title-font);
+}
 .craftee__info .small-text{
     position: absolute;
     right: 0;
@@ -362,6 +365,7 @@ input {
     margin-right: 1rem;
     color: var(--first-color);
     transition-duration: .3s;
+    font-family: var(--title-font);
 }
 
 .info__content .social li span:hover{
@@ -1794,6 +1798,7 @@ textarea{
     .craftee__info{
         width: 35%;
         margin: auto;
+        font-family: --;
     }
     .button__group{
         min-width: 20%;
