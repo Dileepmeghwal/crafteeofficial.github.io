@@ -96,7 +96,7 @@
   
 html {
     scroll-behavior: smooth;
-    /* scroll-snap-type: y mandatory; */
+    scroll-snap-type: y mandatory;
     overflow-x: hidden;
     font-size: 16px;
 }
@@ -147,10 +147,10 @@ input {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 #fullpageContainer{
-    /* scroll-snap-type: y mandatory; */
+    scroll-snap-type: y mandatory;
 }
 .section {
-    /* scroll-snap-align: start; */
+    scroll-snap-align: start;
 }
 
 .container {
@@ -1115,7 +1115,9 @@ textarea{
 .query__image img{
     width: 100%;
 }
-
+.query__section .query__text{
+    line-height: 26px;
+}
 
 /* ===================CAREER PAGE============= */
 .career-section{
@@ -1124,7 +1126,6 @@ textarea{
     position: relative;
     overflow: hidden;
 }
-
 
 .career-bg{
     width: 130px;
@@ -2014,6 +2015,9 @@ textarea{
     }
     .development__wrapper-two .left{
         margin: var(--mb-2-5) 0;
+    }
+    .blogPic{
+        display: block;
     }
 
 }

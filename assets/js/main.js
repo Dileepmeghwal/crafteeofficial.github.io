@@ -1,7 +1,3 @@
-// $(function(){
-//     $(".aboutImg").fadeTo(2000, 0.5);
-// })
-
 
 
 
@@ -26,11 +22,6 @@ if(navClose){
     })
 }
 
-// ===================VANILLA-TILT=============
-VanillaTilt.init(document.querySelector(""), {
-    max: 25,
-    speed: 400
-});
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
@@ -41,19 +32,6 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
-
-
-
-// Vanilla Javascript
-var input = document.querySelector("#telephone");
-window.intlTelInput(input,({
-  // options here
-}));
-
-// jQuery 
-$("#telephone").intlTelInput({
-  // options here
-});
 
 
 
