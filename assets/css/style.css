@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto:wght@100;300;400;500;700;900&family=Waterfall&display=swap");
 
 @font-face {
-  font-family: 'elephant';
-  src: URL('.elephant') format('truetype');
+  font-family: "elephant";
+  src: URL(".elephant") format("truetype");
 }
 
 /*=============== VARIABLES CSS ===============*/
@@ -18,9 +18,9 @@
   --title-color: #124b28;
   --text-color: #ffffff;
   --white-color: #fff;
-  --blue-first: #Daa520;
+  --blue-first: #daa520;
   --blue-second: #061863;
-  --blue-third: #Cc7722;
+  --blue-third: #cc7722;
   --career-first: #046582;
   --career-second: #02394a;
   --career-third: #046582;
@@ -97,7 +97,9 @@
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  scroll-snap-points-y: repeat(300px);
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
   font-size: 16px;
 }
 
@@ -151,7 +153,7 @@ input {
   scroll-snap-type: y mandatory;
 }
 .section {
-  scroll-snap-align: start;
+  scroll-snap-align: center;
 }
 
 .container {
@@ -293,8 +295,6 @@ input {
   background-color: var(--blue-third);
   font-size: var(--biggest-font-size);
 }
-
-
 
 .craftee__info {
   text-transform: capitalize;
@@ -756,15 +756,15 @@ h3 {
 .dog__img {
   width: 200px;
   margin: 0 auto;
-  animation: dog;
+  /* animation: dog;
   animation-duration: 4s;
   animation-delay: 0s;
   animation-iteration-count: infinite;
   transition: all 0s ease;
-  animation-direction: normal;
+  animation-direction: normal; */
 }
 
-@keyframes dog {
+/* @keyframes dog {
   0%{
     transform: rotate(0deg);
   }
@@ -778,11 +778,10 @@ h3 {
     transform: rotate(0deg);
   }
 
-}
-
+} */
 
 /* ============back  button================ */
-.top-scrolling{
+.top-scrolling {
   position: fixed;
   bottom: 50px;
   left: 30px;
@@ -794,34 +793,30 @@ h3 {
   transition: all 0.3s;
   z-index: 888;
 }
-.top-scrolling p{
+.top-scrolling p {
   display: none;
   position: absolute;
   right: 40px;
   top: 12px;
   color: var(--white-color);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-.top-scrolling span{
+.top-scrolling span {
   position: relative;
   top: 15px;
   left: 15px;
   color: var(--white-color);
   font-size: var(--h3-font-size);
 }
-.top-scrolling:hover{
-  background-color:#00000044;
+.top-scrolling:hover {
+  background-color: #00000044;
   width: 130px;
   height: 50px;
   border-radius: 5px;
 }
-.top-scrolling:hover p{
+.top-scrolling:hover p {
   display: block;
-
 }
-
-
-
 
 .dog__img img {
   width: 100%;
@@ -1129,7 +1124,7 @@ textarea {
 .query__section .query__text {
   line-height: 26px;
 }
-.query__text a{
+.query__text a {
   text-transform: lowercase;
 }
 
@@ -1526,7 +1521,7 @@ textarea {
   right: -70px;
 }
 .elephant {
-  font-family: 'elephant';
+  font-family: "elephant";
   letter-spacing: 1px;
   font-size: var(--biggest-font-size);
   margin-left: 0.5rem;
@@ -1627,11 +1622,11 @@ textarea {
 }
 
 .tabs:hover a {
-    font-size: var(--h1-font-size);
-    margin-top: .2rem;
+  font-size: var(--h1-font-size);
+  margin-top: 0.2rem;
 }
 
-.bg-color{
+.bg-color {
   background-color: #80002a;
 }
 .development__section-two {
@@ -1674,31 +1669,29 @@ textarea {
 .career__text {
   padding: 0;
 }
-.tabs:hover:nth-child(1){
-  background-color: #ff661a;
+.tabs:hover:nth-child(1) {
+  background-color: #B97A95;
 }
-.tabs:hover:nth-child(2){
+.tabs:hover:nth-child(2) {
   background-color: #ff6699;
 }
-.tabs:hover:nth-child(3){
-  background-color: #006600;
+.tabs:hover:nth-child(3) {
+  background-color: #6B7AA1;
 }
-.tabs:hover:nth-child(4){
-  background-color: #005ce6;
+.tabs:hover:nth-child(4) {
+  background-color: #87A8A4;
 }
-.tabs:hover:nth-child(5){
-  background-color:  #001a1a;
+.tabs:hover:nth-child(5) {
+  background-color: #C1CFC0;
 }
-
 
 /* =======================FOOTER============================ */
-.footer{
+.footer {
   position: relative;
   width: 100%;
   height: 100vh;
-
 }
-.footer__container{
+.footer__container {
   max-width: 90%;
   margin: auto;
   display: grid;
@@ -1708,88 +1701,70 @@ textarea {
   position: relative;
   top: 170px;
 }
-.footer .footer-bg{
-  background-color: #EA5C2B;
+.footer .footer-bg {
+  background-color: #ea5c2b;
 }
-.footer__link .career__icon{
+.c-blob{
+  background-color: #E4BAD4;
+}
+.footer__link .career__icon {
   justify-content: flex-start;
   margin: 0;
 }
-.footer__link h3{
+.footer__link h3 {
   margin-bottom: var(--mb-0-75);
 }
 .footer__container .career__icon span {
   padding: 0;
   background-color: transparent;
-  margin: var(--mb-0-75) .4rem;
+  margin: var(--mb-0-75) 0.4rem;
 }
-.footer__link{
+.footer__link {
   margin-bottom: var(--mb-2);
   position: relative;
 }
-.footer__container .flexIcon{
+.footer__container .flexIcon {
   justify-content: flex-start;
   margin: 0;
   padding: 0;
 }
 
-.footer__container .flexIcon span{
+.footer__container .flexIcon span {
   margin-right: var(--mb-0-25);
 }
-.footer__container .bolds{
+.footer__container .bolds {
   font-weight: var(--font-medium);
 }
-.footer__container .nav__logo{
+.footer__container .nav__logo {
   position: absolute;
   width: 130px;
   top: -70px;
   left: 0;
 }
-.footer__link a{
+.footer__link a {
   display: block;
   color: var(--white-color);
   transition: all 0.3s;
 }
-.f-link{
+.f-link {
   line-height: 40px;
 }
-.footer__link a:hover{
-  color: #F3C892;
+.footer__link a:hover {
+  color: #f3c892;
 }
-.query__box .query__text .flexIcon{
+.query__box .query__text .flexIcon {
   justify-content: flex-start;
 }
-.query__box .query__text .flexIcon span{
+.query__box .query__text .flexIcon span {
   margin-right: var(--mb-0-25);
 }
+
+.career-footer{
+  width: 100%;
+  height: 100vh;
+  background-color: #A68DAD;
+}
 /* ===============================END FOOTER========================= */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ===========================END SERVICE PAGE================== */
 
@@ -1830,16 +1805,6 @@ textarea {
     font-size: var(--h3-font-size);
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 1200px) {
   .about__inner h1,
@@ -1921,7 +1886,7 @@ textarea {
   .career__contact {
     flex-direction: column;
   }
-  .footer__container{
+  .footer__container {
     grid-template-columns: 47% 47%;
   }
   /* ==========================BLOG================== */
@@ -2198,7 +2163,7 @@ textarea {
     font-weight: var(--font-medium);
   }
   /* ===============FOOTER============== */
-  .footer__container{
+  .footer__container {
     grid-template-columns: 100%;
   }
 }
@@ -2515,12 +2480,14 @@ textarea {
   }
 }
 
-
-
 @media screen and (max-width: 320px) {
   .footer .footer-bg {
-    background-color: #EA5C2B;
+    background-color: #ea5c2b;
     width: 100%;
     height: 165vh;
-}
+  }
+  .career-footer{
+    width: 100%;
+    height: 165vh;
+  }
 }

@@ -50,7 +50,7 @@ $( "#contact" ).hover(  function() {
     $('#item_no').text(function(i, oldText) {
     return oldText === '00' ? '05' : oldText;
 });
-$('#item_no').css({"color":"#041351"});
+$('#item_no').css({"color":"#daa520"});
 },function() {
     $('#item_no').text(function(i, oldText) {
     return oldText === '05' ? '00' : oldText;
